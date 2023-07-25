@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio Player</title>
+  </head>
+  <body>
+    <h1>Audio Player</h1>
+    <audio controls>
+      <source src="static/recorded_audio.wav" 
+      type="audio/mpeg">
+      <p>Your browser does not support the audio element.
+      </p>
+    </audio>
+    <br>
+    <a href="{{ url_for('record') }}">Record</a>
+    <br>
+    <h3>For PC Users: Ctrl + F5 to update plots</h2>
+    <h3>For Phone Users: you'll have to manually clear any
+    cache data associated with the site and reload the 
+    page to update plots</h2>
+    <h4>For Chrome Phone Users:</h3>
+    <ol>
+      <li>Tap on the three-dot menu icon to open 
+      settings.</li>
+      <li>Under Advanced, open site settings and go to Data 
+      stored.</li>
+      <li>Tap on the site URL you wish to hard refresh and
+      tap on the 
+      Clear & reset button.</li>
+      <li>Return to the website and use the tree-dot menu
+      icon and tap
+      on the refresh button.</li>
+    </ol>
+    <h1>Waveform Plot</h1>
+    <img src="static/waveform.png" alt="waveform">
+    <br>
+    <h1>Spectrogram Plot</h1>
+    <img src="static/spectrogram.png" alt="spectrogram">
+    <br>
+  </body>
+</html>
